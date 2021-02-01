@@ -4,7 +4,7 @@ from os.path import basename, splitext
 import tkinter as tk
 from tkinter import Scale, Canvas, Entry, HORIZONTAL, StringVar, Label, Frame, messagebox, IntVar, Button
 
-class Mishmash(Frame):
+class Pocitani(Frame):
 
     def __init__(self, master):
         super().__init__(master)
@@ -53,6 +53,6 @@ class Mishmash(Frame):
 
 
 root = tk.Tk()
-app = Mishmash(root)
+app = Pocitani(root)
 root.mainloop()
 
