@@ -150,14 +150,15 @@ class Pocitani(Frame):
             pass
 
     def overeni(self):
-        vysledek = int(self.rovna_se.get())
+        vysledek = self.rovna_se.get()
         spravne = int(self.pocitadlo2.get())
         spatne = int(self.pocitadlo1.get())
         clean = ""
         
-        if vysledek is not int():
+        if vysledek == "":
             messagebox.showerror("Chyba", "zadejte výsledné číslo")
         else:
+            vysledek = int(self.rovna_se.get())
             if operant == "+":
                 if vysledek == (cislo_a + cislo_b):
                     self.rovna_se.configure(background="#00FF00")
